@@ -11,8 +11,9 @@ import SnapKit
 
 class MainViewController: UIViewController {
     
-    let myView = UIView()
-    var myTextView = UITextView()
+    let myView = UIView(frame: UIScreen.main.bounds)
+    var myTextView = UITextView(frame: .zero)
+    //var mySwitch = UISwitch(frame: .zero)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,16 +23,31 @@ class MainViewController: UIViewController {
         
         view.backgroundColor = .gray
         
-        myTextView.frame = CGRect(x: 0, y: 0, width: 150, height: 50)
+        //myTextView.frame = CGRect(x: 60, y: 200, width: 200, height: 50)
         myTextView.text = "Введите текст"
+        myTextView.backgroundColor = .orange
+        //myTextView.sizeToFit()
+        //myTextView
         myTextView.translatesAutoresizingMaskIntoConstraints = false
+        myTextView.isScrollEnabled = false
+        
         myView.addSubview(myTextView)
         
+       // myView.addSubview(mySwitch)
+        
         //debuging
-        myView.snp.makeConstraints { (make) -> Void in
-           make.width.height.equalTo(250)
-           make.center.equalTo(self.view)
-        }
+        //myView.snp.makeConstraints { (make) -> Void in
+           
+          // make.leading.trailing.equalTo(0)
+          // make.top.bottom.equalTo(0)
+
+                  //  }
+        myTextView.snp.makeConstraints { (make) -> Void in
+           
+            make.leading.trailing.equalTo(myView).offset(0)
+           make.top.equalTo(100)
+       
+                    }
         
     }
 
