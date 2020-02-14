@@ -13,7 +13,8 @@ class MainViewController: UIViewController {
     
     let myView = UIView(frame: UIScreen.main.bounds)
     var myTextView = UITextView(frame: .zero)
-    //var mySwitch = UISwitch(frame: .zero)
+    var mySwitch = UISwitch()
+    var oneLabel = UILabel(frame: .zero)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,34 +24,42 @@ class MainViewController: UIViewController {
         
         view.backgroundColor = .gray
         
-        //myTextView.frame = CGRect(x: 60, y: 200, width: 200, height: 50)
         myTextView.text = "Введите текст"
         myTextView.backgroundColor = .orange
         //myTextView.sizeToFit()
-        //myTextView
         myTextView.translatesAutoresizingMaskIntoConstraints = false
         myTextView.isScrollEnabled = false
-        
         myView.addSubview(myTextView)
         
-       // myView.addSubview(mySwitch)
+        mySwitch.setOn(false, animated: false)
+        mySwitch.thumbTintColor = .green
+        // Why don't work tintColor?
+        mySwitch.tintColor = .red
+        mySwitch.backgroundColor = .lightGray
+        mySwitch.onTintColor = .orange
+        myView.addSubview(mySwitch)
         
-        //debuging
-        //myView.snp.makeConstraints { (make) -> Void in
-           
-          // make.leading.trailing.equalTo(0)
-          // make.top.bottom.equalTo(0)
-
-                  //  }
+        oneLabel.text = "Label Text"
+        myView.addSubview(oneLabel)
+        
         myTextView.snp.makeConstraints { (make) -> Void in
-           
-            make.leading.trailing.equalTo(myView).offset(0)
-           make.top.equalTo(100)
-       
-                    }
+        make.leading.trailing.equalTo(myView).offset(0)
+        make.top.equalTo(myView).offset(100)
+        
+                }
+        mySwitch.snp.makeConstraints { (make) in
+        make.top.equalTo(myTextView.snp.bottom).offset(50)
+        make.centerX.equalTo(myView)
+        }
+        oneLabel.snp.makeConstraints { (make) in
+            make.size.equalTo(CGSize(width: 100, height: 20))
+            make.top.equalTo(mySwitch.snp.bottom).offset(50)
+            make.centerX.equalTo(myView)
+        }
+        
         
     }
-
+    
 
 }
 
