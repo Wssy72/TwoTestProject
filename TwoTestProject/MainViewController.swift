@@ -65,7 +65,7 @@ class MainViewController: UIViewController {
         if mySwitch.isOn {
             oneLabel.text = "Switch On"
         } else {
-            print("Switch Off")
+            oneLabel.text = "Switch Off"
         }
     }
 
