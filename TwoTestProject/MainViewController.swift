@@ -38,9 +38,10 @@ class MainViewController: UIViewController {
         mySwitch.tintColor = .red
         mySwitch.backgroundColor = .lightGray
         mySwitch.onTintColor = .orange
+        mySwitch.addTarget(self, action: #selector(stateMySwitch), for: .valueChanged)
         myView.addSubview(mySwitch)
         
-        oneLabel.text = "Label Text"
+        oneLabel.text = "Switch Off"
         myView.addSubview(oneLabel)
         
         myTextView.snp.makeConstraints { (make) -> Void in
@@ -58,10 +59,15 @@ class MainViewController: UIViewController {
         make.top.equalTo(mySwitch.snp.bottom).offset(50)
         make.centerX.equalTo(myView)
         }
-        
-        
     }
     
+    @objc func stateMySwitch() {
+        if mySwitch.isOn {
+            oneLabel.text = "Switch On"
+        } else {
+            print("Switch Off")
+        }
+    }
 
 }
 
