@@ -48,6 +48,7 @@ class MainViewController: UIViewController {
         var mainTabBarItem = UITabBarItem()
         mainTabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 0)
         //mainTabBarItem.title = "MainVC"
+        tabBarVC.self = mainTabBarItem
         
         myTextView.snp.makeConstraints { (make) -> Void in
         make.height.greaterThanOrEqualTo(25)
