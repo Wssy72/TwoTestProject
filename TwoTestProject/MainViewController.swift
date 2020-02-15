@@ -25,6 +25,7 @@ class MainViewController: UIViewController {
         view.backgroundColor = .gray
         
         myTextView.text = "Введите текст"
+        myTextView.textAlignment = .center
         myTextView.backgroundColor = .orange
         //myTextView.sizeToFit()
         myTextView.translatesAutoresizingMaskIntoConstraints = false
@@ -43,18 +44,19 @@ class MainViewController: UIViewController {
         myView.addSubview(oneLabel)
         
         myTextView.snp.makeConstraints { (make) -> Void in
-        make.leading.trailing.equalTo(myView).offset(0)
+        make.height.greaterThanOrEqualTo(25)
+        make.width.equalTo(250)
         make.top.equalTo(myView).offset(100)
-        
+        make.centerX.equalTo(myView)
                 }
         mySwitch.snp.makeConstraints { (make) in
         make.top.equalTo(myTextView.snp.bottom).offset(50)
         make.centerX.equalTo(myView)
         }
         oneLabel.snp.makeConstraints { (make) in
-            make.size.equalTo(CGSize(width: 100, height: 20))
-            make.top.equalTo(mySwitch.snp.bottom).offset(50)
-            make.centerX.equalTo(myView)
+        make.size.equalTo(CGSize(width: 100, height: 20))
+        make.top.equalTo(mySwitch.snp.bottom).offset(50)
+        make.centerX.equalTo(myView)
         }
         
         
