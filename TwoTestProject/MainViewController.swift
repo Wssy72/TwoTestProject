@@ -21,7 +21,7 @@ class MainViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         self.view.addSubview(myView)
-        
+        title = "MainVC"
         view.backgroundColor = .gray
         
         myTextView.text = "Введите текст"
