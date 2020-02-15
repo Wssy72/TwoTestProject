@@ -22,6 +22,7 @@ class MainViewController: UIViewController {
         
         self.view.addSubview(myView)
         title = "MainVC"
+        
         view.backgroundColor = .gray
         
         myTextView.text = "Введите текст"
@@ -43,6 +44,10 @@ class MainViewController: UIViewController {
         
         oneLabel.text = "Switch Off"
         myView.addSubview(oneLabel)
+        
+        var mainTabBarItem = UITabBarItem()
+        mainTabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 0)
+        //mainTabBarItem.title = "MainVC"
         
         myTextView.snp.makeConstraints { (make) -> Void in
         make.height.greaterThanOrEqualTo(25)
