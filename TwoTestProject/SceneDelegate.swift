@@ -22,6 +22,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let viewController = MainViewController()
         let secondViewController = TwoViewController()
         let tabBarVC = UITabBarController()
+        tabBarVC.tabBar.barStyle = .black
         tabBarVC.setViewControllers([viewController, secondViewController], animated: true)
         window?.rootViewController = tabBarVC
         window?.makeKeyAndVisible()
