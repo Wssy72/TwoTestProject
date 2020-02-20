@@ -53,7 +53,6 @@
 		A5CD7D7E23F2C9570099F89D = {
 			isa = PBXGroup;
 			children = (
-				A5CD7D9E23F2CACA0099F89D /* Default-568h@2x.png */,
 				A5CD7D8923F2C9570099F89D /* TwoTestProject */,
 				A5CD7D8823F2C9570099F89D /* Products */,
 				A9D9F4FC36DAAB05E26DB1CE /* Pods */,
@@ -154,7 +153,6 @@
 			files = (
 				A5CD7D9723F2C95C0099F89D /* LaunchScreen.storyboard in Resources */,
 				A5CD7D9423F2C95C0099F89D /* Assets.xcassets in Resources */,
-				A5CD7D9F23F2CACA0099F89D /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
