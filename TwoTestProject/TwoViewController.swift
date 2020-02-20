@@ -12,7 +12,6 @@ import UIKit
 class TwoViewController: UIViewController {
 
     let labelTwoVC = UILabel(frame: .zero)
-    var twoTabBarItem = UITabBarItem()
     
     override func viewDidLoad() {
     super.viewDidLoad()
@@ -20,12 +19,11 @@ class TwoViewController: UIViewController {
     title = "TwoVC"
     view.backgroundColor = .orange
         
-    let tabMain = TwoViewController()
-    
-    
-    twoTabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 1)
-    tabMain.tabBarItem = twoTabBarItem
+        tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 1)
         
+        //= UITabBarItem(title: "Title", image: UIImage(named: "open"), selectedImage: UIImage(named: "open"))
+    
+    
     labelTwoVC.frame = CGRect(x: 25, y: 50, width: 350, height: 50)
     labelTwoVC.text = "Добро пожаловать"
     labelTwoVC.textAlignment = .center

@@ -15,7 +15,6 @@ class MainViewController: UIViewController {
     var myTextView = UITextView(frame: .zero)
     var mySwitch = UISwitch()
     var oneLabel = UILabel(frame: .zero)
-    var mainTabBarItem = UITabBarItem()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,17 +43,11 @@ class MainViewController: UIViewController {
         
         oneLabel.text = "Switch Off"
         myView.addSubview(oneLabel)
-        
-        let tabMain1 = MainViewController()
-        title = "MainVC"
-        mainTabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 0)
-        tabMain1.tabBarItem = mainTabBarItem
        
-        let tab2 = TwoViewController()
-        let twoTabBarItem = UITabBarItem(tabBarSystemItem: .more, tag: 1)
-        twoTabBarItem.badgeColor = .green
-        tab2.tabBarItem = twoTabBarItem
-        
+        tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 0)
+            
+            //= UITabBarItem(title: "MainVC", image: UIImage(named: "Home"), selectedImage: UIImage(named: "Home"))
+       
         myTextView.snp.makeConstraints { (make) -> Void in
         make.height.greaterThanOrEqualTo(25)
         make.width.equalTo(250)
