@@ -44,7 +44,9 @@ class MainViewController: UIViewController {
         oneLabel.text = "Switch Off"
         myView.addSubview(oneLabel)
        
-        tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 0)
+       
+        
+        //tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 0)
             
             //= UITabBarItem(title: "MainVC", image: UIImage(named: "Home"), selectedImage: UIImage(named: "Home"))
        
@@ -73,5 +75,11 @@ class MainViewController: UIViewController {
         }
     }
 
+  class MyTabBarController: UITabBarController {
+           
+           
+             
+           
+                 }
 }
 

@@ -23,12 +23,10 @@ class TwoViewController: UIViewController {
         
         //= UITabBarItem(title: "Title", image: UIImage(named: "open"), selectedImage: UIImage(named: "open"))
     
-    
     labelTwoVC.frame = CGRect(x: 25, y: 50, width: 350, height: 50)
     labelTwoVC.text = "Добро пожаловать"
     labelTwoVC.textAlignment = .center
     view.addSubview(labelTwoVC)
         
-    
     }
 }

@@ -22,8 +22,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let secondViewController = TwoViewController()
         let tabBarVC = UITabBarController()
         tabBarVC.setViewControllers([viewController, secondViewController], animated: true)
-        secondViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 1)
-        window?.rootViewController = tabBarVC
+        //secondViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 1)
+        window?.rootViewController = MyTabBarViewController() //tabBarVC
         window?.makeKeyAndVisible()
         window?.windowScene = scene as? UIWindowScene
     }
