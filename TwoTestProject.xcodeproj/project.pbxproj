@@ -14,6 +14,7 @@
 		A5CD7D9423F2C95C0099F89D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5CD7D9323F2C95C0099F89D /* Assets.xcassets */; };
 		A5CD7D9723F2C95C0099F89D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5CD7D9523F2C95C0099F89D /* LaunchScreen.storyboard */; };
 		A5F59B8723F84DBC006A95FE /* TwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F59B8623F84DBC006A95FE /* TwoViewController.swift */; };
+		A5F787BE240141D4002EB4FE /* MyTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F787BD240141D4002EB4FE /* MyTabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		A5CD7D9623F2C95C0099F89D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A5CD7D9823F2C95C0099F89D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5F59B8623F84DBC006A95FE /* TwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoViewController.swift; sourceTree = "<group>"; };
+		A5F787BD240141D4002EB4FE /* MyTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				A5CD7D8C23F2C9570099F89D /* SceneDelegate.swift */,
 				A5CD7D8E23F2C9570099F89D /* MainViewController.swift */,
 				A5F59B8623F84DBC006A95FE /* TwoViewController.swift */,
+				A5F787BD240141D4002EB4FE /* MyTabBarViewController.swift */,
 				A5CD7D9323F2C95C0099F89D /* Assets.xcassets */,
 				A5CD7D9523F2C95C0099F89D /* LaunchScreen.storyboard */,
 				A5CD7D9823F2C95C0099F89D /* Info.plist */,
@@ -208,6 +211,7 @@
 				A5CD7D8F23F2C9570099F89D /* MainViewController.swift in Sources */,
 				A5CD7D8B23F2C9570099F89D /* AppDelegate.swift in Sources */,
 				A5CD7D8D23F2C9570099F89D /* SceneDelegate.swift in Sources */,
+				A5F787BE240141D4002EB4FE /* MyTabBarViewController.swift in Sources */,
 				A5F59B8723F84DBC006A95FE /* TwoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
