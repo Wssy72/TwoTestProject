@@ -16,7 +16,7 @@ class TwoViewController: UIViewController {
     override func viewDidLoad() {
     super.viewDidLoad()
     
-    title = "TwoVC"
+    //title = "TwoVC"
     view.backgroundColor = .orange
         
         //tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 1)
