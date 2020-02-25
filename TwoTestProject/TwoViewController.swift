@@ -19,7 +19,6 @@ class TwoViewController: UIViewController {
     //title = "TwoVC"
     view.backgroundColor = .orange
         
-        //tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 1)
         
         //= UITabBarItem(title: "Title", image: UIImage(named: "open"), selectedImage: UIImage(named: "open"))
     

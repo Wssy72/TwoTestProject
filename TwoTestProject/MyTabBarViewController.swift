@@ -21,9 +21,9 @@ class MyTabBarViewController: UITabBarController {
         
         let secondVC = TwoViewController()
         oneVC.title = "two"
-        secondVC.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 1)
-        //secondVC.tabBarItem = UITabBarController(tabBarSystemItem: .search, tag: 1)
-        //secondVC.tabBarItem = tabBarTwoItem
+        //secondVC.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 1)
+       
+        secondVC.tabBarItem = UITabBarItem(title: "Title", image: UIImage(named: "open"), selectedImage: UIImage(named: "open"))
         viewControllers = [oneVC, secondVC]
         
   
