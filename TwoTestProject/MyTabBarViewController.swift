@@ -17,7 +17,7 @@ class MyTabBarViewController: UITabBarController {
         oneVC.title = "one"
         //oneVC.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 0)
         
-        oneVC.tabBarItem = UITabBarItem(title: "MainVC", image: UIImage(named: "Home"), selectedImage: UIImage(named: "Home"))
+        oneVC.tabBarItem = UITabBarItem(title: "Main", image: UIImage(named: "home"), selectedImage: UIImage(named: "home"))
         
         let secondVC = TwoViewController()
         oneVC.title = "two"
