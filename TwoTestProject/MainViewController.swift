@@ -48,7 +48,7 @@ class MainViewController: UIViewController {
         //tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 0)
         
             
-            //= UITabBarItem(title: "MainVC", image: UIImage(named: "Home"), selectedImage: UIImage(named: "Home"))
+            
        
         myTextView.snp.makeConstraints { (make) -> Void in
         make.height.greaterThanOrEqualTo(25)

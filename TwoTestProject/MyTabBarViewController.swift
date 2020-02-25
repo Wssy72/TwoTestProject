@@ -15,15 +15,18 @@ class MyTabBarViewController: UITabBarController {
         
         let oneVC = MainViewController()
         oneVC.title = "one"
-        oneVC.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 0)
+        //oneVC.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 0)
+        
+        oneVC.tabBarItem = UITabBarItem(title: "MainVC", image: UIImage(named: "Home"), selectedImage: UIImage(named: "Home"))
         
         let secondVC = TwoViewController()
         oneVC.title = "two"
         secondVC.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 1)
         //secondVC.tabBarItem = UITabBarController(tabBarSystemItem: .search, tag: 1)
         //secondVC.tabBarItem = tabBarTwoItem
-        
         viewControllers = [oneVC, secondVC]
+        
+  
         
         // Do any additional setup after loading the view.
     }
