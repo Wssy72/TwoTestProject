@@ -26,8 +26,6 @@ class MyTabBarViewController: UITabBarController {
         secondVC.tabBarItem = UITabBarItem(title: "Title", image: UIImage(named: "open"), selectedImage: UIImage(named: "open"))
         viewControllers = [oneVC, secondVC]
         
-  
-        
         // Do any additional setup after loading the view.
     }
     
